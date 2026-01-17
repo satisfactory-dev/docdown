@@ -11,6 +11,7 @@ on:
             - package-lock.json
             - .github/workflows/*.yml
             - .c8rc.coveralls.json
+            - bin/docdown.js
     pull_request:
         branches: [main]
         paths:
