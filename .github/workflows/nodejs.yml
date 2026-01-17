@@ -34,7 +34,7 @@ jobs:
                   node-version: ${{ matrix.node_version }}
                   cache: 'npm'
             - run: npm ci
-            - run: npm run doc
+            - run: make docs
     basic-checks:
         runs-on: ubuntu-latest
         needs: fail-early
@@ -61,7 +61,7 @@ jobs:
             - name: install dirty
               if: ${{ matrix.node_version <= 9 }}
               run: npm install
-            - run: npm run doc
+            - run: make docs
     coverage--node:
         name: Node Coverage
         runs-on: ubuntu-latest
@@ -75,7 +75,7 @@ jobs:
                   cache: 'npm'
             - run: npm ci
             - run: npm install -g c8@7
-            - run: c8 -c ./.c8rc.coveralls.json npm run doc
+            - run: c8 -c ./.c8rc.coveralls.json make docs
             - name: Coveralls GitHub Action
               uses: coverallsapp/github-action@v2.2.3
               with:

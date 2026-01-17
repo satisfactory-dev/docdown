@@ -23,4 +23,4 @@ coverage:
 	@make nvm--exec VERSION=10 CMD="c8 npm run doc"
 
 docs:
-	@make nvm--exec VERSION=6 CMD="npm run doc"
+	node bin/docdown index.js doc/README.md style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
