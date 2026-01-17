@@ -6,7 +6,7 @@ var fs = require('fs'),
     path = require('path');
 
 /** Load other modules */
-var _ = require('lodash'),
+var
     docdown = require('../index.js');
 
 /** The list of arguments provided */
@@ -14,17 +14,19 @@ var argv = process.argv;
 
 /*----------------------------------------------------------------------------*/
 
+/** @typedef {'lang'|'sort'|'style'|'title'|'toc'|'url'} OptionName */
+
 /**
  * Gets the value for the given option name. If no value is available the
  * `defaultValue` is returned.
  *
  * @private
- * @param {string} name The name of the option.
+ * @param {OptionName} name The name of the option.
  * @param {*} defaultValue The default option value.
  * @returns {*} Returns the option value.
  */
 function getOption(name, defaultValue) {
-  return _.reduce(process.argv, function(result, value) {
+  return process.argv.reduce(function(result, value) {
     value = optionToValue(name, value);
 
     return value == null ? result : value;
@@ -35,15 +37,17 @@ function getOption(name, defaultValue) {
  * Extracts the option value from an option string.
  *
  * @private
- * @param {string} name The name of the option to inspect.
+ * @param {OptionName} name The name of the option to inspect.
  * @param {string} string The options string.
  * @returns {string|undefined} Returns the option value, else `undefined`.
  */
 function optionToValue(name, string) {
-  var result = string.match(RegExp('^' + name + '(?:=([\\s\\S]+))?$'));
-  if (result) {
-    result = _.result(result, 1);
-    result = result ? _.trim(result) : true;
+  /** @type {string|undefined} */
+  let result;
+  const match = string.match(RegExp('^' + name + '(?:=([\\s\\S]+))?$'));
+  if (match) {
+    [, result] = match;
+    result = result ? result.trim() : true;
   }
   if (result === 'false') {
     return false;
@@ -60,9 +64,8 @@ var cwd = process.cwd(),
 if (
   !fileName ||
   !outputFile ||
-  _.find(argv, function(arg) {
-    return /^(?:-h|--help)$/.test(arg);
-  })
+  argv.includes('-h') ||
+  argv.includes('--help')
 ) {
   console.log([
     'Usage:',
