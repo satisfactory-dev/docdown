@@ -1,0 +1,18 @@
+services:
+    devcontainer:
+        build:
+            dockerfile: devcontainer.DockerFile
+        restart: always
+        command: sleep infinity
+        volumes:
+            - ../../:/workspaces:cached
+        depends_on:
+            - coverage
+    coverage:
+        image: nginxinc/nginx-unprivileged:1.29-alpine
+        restart: unless-stopped
+        ports:
+            - '${PORT_COVERAGE:-8002}:80'
+        volumes:
+            - ./coverage.conf:/etc/nginx/conf.d/default.conf
+            - ../coverage/:/app/

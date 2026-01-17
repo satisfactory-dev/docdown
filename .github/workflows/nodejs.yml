@@ -1,0 +1,79 @@
+# This workflow will do a clean installation of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+on:
+    push:
+        paths:
+            - index.js
+            - lib/*.js
+            - package.json
+            - package-lock.json
+    pull_request:
+        branches: [main]
+        paths:
+            - index.js
+            - lib/*.js
+            - package.json
+            - package-lock.json
+jobs:
+    fail-early:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node_version:
+                    - 10
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js ${{ matrix.node_version }}
+              uses: actions/setup-node@v6
+              with:
+                  node-version: ${{ matrix.node_version }}
+                  cache: 'npm'
+            - run: npm ci
+            - run: npm run doc
+    basic-checks:
+        runs-on: ubuntu-latest
+        needs: fail-early
+        strategy:
+            matrix:
+                node_version:
+                    - 6
+                    - 7
+                    - 8
+                    - 9
+                    - 11
+                    - 24
+                    - 25
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js ${{ matrix.node_version }}
+              uses: actions/setup-node@v6
+              with:
+                  node-version: ${{ matrix.node_version }}
+                  cache: 'npm'
+            - name: install clean
+              if: ${{ matrix.node_version > 6 }}
+              run: npm ci
+            - name: install dirty
+              if: ${{ matrix.node_version == 6 }}
+              run: npm install
+            - run: npm run doc
+    coverage--node:
+        name: Node Coverage
+        runs-on: ubuntu-latest
+        needs: fail-early
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js 10
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 10
+                  cache: 'npm'
+            - run: npm ci
+            - run: npm install -g c8@7
+            - run: c8 -c ./.c8rc.coveralls.json npm run doc
+            - name: Coveralls GitHub Action
+              uses: coverallsapp/github-action@v2.2.3
+              with:
+                  file: './coverage/lcov.info'
