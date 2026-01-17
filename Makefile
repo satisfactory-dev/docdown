@@ -20,7 +20,7 @@ init:
 
 coverage:
 	@make nvm--exec VERSION=10 CMD="npm install -g c8@7"
-	@make nvm--exec VERSION=10 CMD="c8 npm run doc"
+	@make nvm--exec VERSION=10 CMD="c8 make docs"
 
 docs:
 	@node bin/docdown index.js doc/index.md style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
