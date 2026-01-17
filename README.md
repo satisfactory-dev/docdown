@@ -7,6 +7,15 @@ A simple JSDoc to Markdown documentation generator.
 
 Forked from [docdown](https://github.com/jdalton/docdown)
 
+## Docs
+
+* [index.js](doc/index.md)
+* lib
+  - [alias.js](doc/lib/alias.md)
+  - [entry.js](doc/lib/entry.md)
+  - [generator.js](doc/lib/generator.md)
+  - [util.js](doc/lib/util.md)
+
 ## Usage
 
 ```js

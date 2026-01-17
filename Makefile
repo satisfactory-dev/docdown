@@ -23,4 +23,5 @@ coverage:
 	@make nvm--exec VERSION=10 CMD="c8 npm run doc"
 
 docs:
-	node bin/docdown index.js doc/README.md style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
+	@node bin/docdown index.js doc/index.md style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
+	@find lib -iname "*.js" | sed "s/\.js$///" | xargs -I{} node bin/docdown "{}.js" "doc/{}.md" style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url="https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/{}.js"
