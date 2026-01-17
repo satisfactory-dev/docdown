@@ -3,8 +3,7 @@
 
 /** Load Node.js modules */
 var fs = require('fs'),
-    path = require('path'),
-    url = require('url');
+    path = require('path');
 
 /** Load other modules */
 var _ = require('lodash'),
