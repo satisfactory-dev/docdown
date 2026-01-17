@@ -9,6 +9,8 @@ on:
             - lib/*.js
             - package.json
             - package-lock.json
+            - .github/workflows/*.yml
+            - .c8rc.coveralls.json
     pull_request:
         branches: [main]
         paths:
