@@ -1,38 +1,158 @@
-# docdown <sup>feef7467de079667731d6beab0c2d02ed5613e34</sup>
+# docdown <sup>e0188188c7a4499ddbf7583c7d707439026e2e00</sup>
 
 <!-- div class="toc-container" -->
 
 <!-- div -->
 
-## `Alias`
-* <a href="#aliasname-owner">`Alias`</a>
+## `constructor`
+* <a href="#constructorname-owner">`constructor`</a>
 
 <!-- /div -->
 
 <!-- div -->
 
-## `Alias.prototype`
-* <a href="#aliasprototypegetaliasesindex">`Alias.prototype.getAliases`</a>
-* <a href="#aliasprototypegetcall">`Alias.prototype.getCall`</a>
-* <a href="#aliasprototypegetcategory">`Alias.prototype.getCategory`</a>
-* <a href="#aliasprototypegetdesc">`Alias.prototype.getDesc`</a>
-* <a href="#aliasprototypegetexample">`Alias.prototype.getExample`</a>
-* <a href="#aliasprototypegethashstyle">`Alias.prototype.getHash`</a>
-* <a href="#aliasprototypegetlinenumber">`Alias.prototype.getLineNumber`</a>
-* <a href="#aliasprototypegetmembersindex">`Alias.prototype.getMembers`</a>
-* <a href="#aliasprototypegetname">`Alias.prototype.getName`</a>
-* <a href="#aliasprototypegetowner">`Alias.prototype.getOwner`</a>
-* <a href="#aliasprototypegetparamsindex">`Alias.prototype.getParams`</a>
-* <a href="#aliasprototypegetreturns">`Alias.prototype.getReturns`</a>
-* <a href="#aliasprototypegetsince">`Alias.prototype.getSince`</a>
-* <a href="#aliasprototypegettype">`Alias.prototype.getType`</a>
-* <a href="#aliasprototypeisalias">`Alias.prototype.isAlias`</a>
-* <a href="#aliasprototypeisctor">`Alias.prototype.isCtor`</a>
-* <a href="#aliasprototypeisfunction">`Alias.prototype.isFunction`</a>
-* <a href="#aliasprototypeislicense">`Alias.prototype.isLicense`</a>
-* <a href="#aliasprototypeisplugin">`Alias.prototype.isPlugin`</a>
-* <a href="#aliasprototypeisprivate">`Alias.prototype.isPrivate`</a>
-* <a href="#aliasprototypeisstatic">`Alias.prototype.isStatic`</a>
+## `getAliases`
+* <a href="#getaliasesindex">`getAliases`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getCall`
+* <a href="#getcall">`getCall`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getCategory`
+* <a href="#getcategory">`getCategory`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getDesc`
+* <a href="#getdesc">`getDesc`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getExample`
+* <a href="#getexample">`getExample`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getHash`
+* <a href="#gethashstyle">`getHash`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getLineNumber`
+* <a href="#getlinenumber">`getLineNumber`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getMembers`
+* <a href="#getmembersindex">`getMembers`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getName`
+* <a href="#getname">`getName`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getOwner`
+* <a href="#getowner">`getOwner`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getParams`
+* <a href="#getparamsindex">`getParams`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getReturns`
+* <a href="#getreturns">`getReturns`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getSince`
+* <a href="#getsince">`getSince`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `getType`
+* <a href="#gettype">`getType`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `isAlias`
+* <a href="#isalias">`isAlias`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `isCtor`
+* <a href="#isctor">`isCtor`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `isFunction`
+* <a href="#isfunction">`isFunction`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `isLicense`
+* <a href="#islicense">`isLicense`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `isPlugin`
+* <a href="#isplugin">`isPlugin`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `isPrivate`
+* <a href="#isprivate">`isPrivate`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `isStatic`
+* <a href="#isstatic">`isStatic`</a>
 
 <!-- /div -->
 
@@ -42,12 +162,12 @@
 
 <!-- div -->
 
-## `Alias`
+## `constructor`
 
 <!-- div -->
 
-<h3 id="aliasname-owner"><code>Alias(name, owner)</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L14 "View in source") [&#x24C9;][1]
+<h3 id="constructorname-owner"><code>constructor(name, owner)</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L17 "View in source") [&#x24C9;][1]
 
 The Alias constructor.
 
@@ -63,12 +183,12 @@ The Alias constructor.
 
 <!-- div -->
 
-## `Alias.prototype`
+## `getAliases`
 
 <!-- div -->
 
-<h3 id="aliasprototypegetaliasesindex"><code>Alias.prototype.getAliases([index])</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L26 "View in source") [&#x24C9;][1]
+<h3 id="getaliasesindex"><code>getAliases([index])</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L28 "View in source") [&#x24C9;][1]
 
 Extracts the entry's `alias` objects.
 
@@ -82,10 +202,16 @@ Extracts the entry's `alias` objects.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetcall"><code>Alias.prototype.getCall()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L36 "View in source") [&#x24C9;][1]
+## `getCall`
+
+<!-- div -->
+
+<h3 id="getcall"><code>getCall()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L37 "View in source") [&#x24C9;][1]
 
 Extracts the function call from the owner entry.
 
@@ -96,10 +222,16 @@ Extracts the function call from the owner entry.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetcategory"><code>Alias.prototype.getCategory()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L46 "View in source") [&#x24C9;][1]
+## `getCategory`
+
+<!-- div -->
+
+<h3 id="getcategory"><code>getCategory()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L46 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `category` data.
 
@@ -110,10 +242,16 @@ Extracts the owner entry's `category` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetdesc"><code>Alias.prototype.getDesc()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L56 "View in source") [&#x24C9;][1]
+## `getDesc`
+
+<!-- div -->
+
+<h3 id="getdesc"><code>getDesc()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L55 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's description.
 
@@ -124,10 +262,16 @@ Extracts the owner entry's description.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetexample"><code>Alias.prototype.getExample()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L66 "View in source") [&#x24C9;][1]
+## `getExample`
+
+<!-- div -->
+
+<h3 id="getexample"><code>getExample()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L64 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `example` data.
 
@@ -138,10 +282,16 @@ Extracts the owner entry's `example` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegethashstyle"><code>Alias.prototype.getHash([style])</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L77 "View in source") [&#x24C9;][1]
+## `getHash`
+
+<!-- div -->
+
+<h3 id="gethashstyle"><code>getHash([style])</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L74 "View in source") [&#x24C9;][1]
 
 Extracts the entry's hash value for permalinking.
 
@@ -155,10 +305,16 @@ Extracts the entry's hash value for permalinking.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetlinenumber"><code>Alias.prototype.getLineNumber()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L87 "View in source") [&#x24C9;][1]
+## `getLineNumber`
+
+<!-- div -->
+
+<h3 id="getlinenumber"><code>getLineNumber()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L83 "View in source") [&#x24C9;][1]
 
 Resolves the owner entry's line number.
 
@@ -169,10 +325,16 @@ Resolves the owner entry's line number.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetmembersindex"><code>Alias.prototype.getMembers([index])</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L98 "View in source") [&#x24C9;][1]
+## `getMembers`
+
+<!-- div -->
+
+<h3 id="getmembersindex"><code>getMembers([index])</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L93 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `member` data.
 
@@ -186,10 +348,16 @@ Extracts the owner entry's `member` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetname"><code>Alias.prototype.getName()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L108 "View in source") [&#x24C9;][1]
+## `getName`
+
+<!-- div -->
+
+<h3 id="getname"><code>getName()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L102 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `name` data.
 
@@ -200,10 +368,16 @@ Extracts the owner entry's `name` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetowner"><code>Alias.prototype.getOwner()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L118 "View in source") [&#x24C9;][1]
+## `getOwner`
+
+<!-- div -->
+
+<h3 id="getowner"><code>getOwner()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L111 "View in source") [&#x24C9;][1]
 
 Gets the owner entry object.
 
@@ -214,10 +388,16 @@ Gets the owner entry object.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetparamsindex"><code>Alias.prototype.getParams([index])</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L129 "View in source") [&#x24C9;][1]
+## `getParams`
+
+<!-- div -->
+
+<h3 id="getparamsindex"><code>getParams([index])</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L121 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `param` data.
 
@@ -231,10 +411,16 @@ Extracts the owner entry's `param` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetreturns"><code>Alias.prototype.getReturns()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L139 "View in source") [&#x24C9;][1]
+## `getReturns`
+
+<!-- div -->
+
+<h3 id="getreturns"><code>getReturns()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L130 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `returns` data.
 
@@ -245,10 +431,16 @@ Extracts the owner entry's `returns` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegetsince"><code>Alias.prototype.getSince()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L149 "View in source") [&#x24C9;][1]
+## `getSince`
+
+<!-- div -->
+
+<h3 id="getsince"><code>getSince()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L139 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `since` data.
 
@@ -259,10 +451,16 @@ Extracts the owner entry's `since` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypegettype"><code>Alias.prototype.getType()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L159 "View in source") [&#x24C9;][1]
+## `getType`
+
+<!-- div -->
+
+<h3 id="gettype"><code>getType()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L148 "View in source") [&#x24C9;][1]
 
 Extracts the owner entry's `type` data.
 
@@ -273,10 +471,16 @@ Extracts the owner entry's `type` data.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypeisalias"><code>Alias.prototype.isAlias()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L169 "View in source") [&#x24C9;][1]
+## `isAlias`
+
+<!-- div -->
+
+<h3 id="isalias"><code>isAlias()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L157 "View in source") [&#x24C9;][1]
 
 Checks if the entry is an alias.
 
@@ -287,10 +491,16 @@ Checks if the entry is an alias.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypeisctor"><code>Alias.prototype.isCtor()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L179 "View in source") [&#x24C9;][1]
+## `isCtor`
+
+<!-- div -->
+
+<h3 id="isctor"><code>isCtor()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L166 "View in source") [&#x24C9;][1]
 
 Checks if the owner entry is a constructor.
 
@@ -301,10 +511,16 @@ Checks if the owner entry is a constructor.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypeisfunction"><code>Alias.prototype.isFunction()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L189 "View in source") [&#x24C9;][1]
+## `isFunction`
+
+<!-- div -->
+
+<h3 id="isfunction"><code>isFunction()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L175 "View in source") [&#x24C9;][1]
 
 Checks if the entry is a function reference.
 
@@ -315,10 +531,16 @@ Checks if the entry is a function reference.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypeislicense"><code>Alias.prototype.isLicense()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L199 "View in source") [&#x24C9;][1]
+## `isLicense`
+
+<!-- div -->
+
+<h3 id="islicense"><code>isLicense()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L184 "View in source") [&#x24C9;][1]
 
 Checks if the owner entry is a license.
 
@@ -329,10 +551,16 @@ Checks if the owner entry is a license.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypeisplugin"><code>Alias.prototype.isPlugin()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L209 "View in source") [&#x24C9;][1]
+## `isPlugin`
+
+<!-- div -->
+
+<h3 id="isplugin"><code>isPlugin()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L193 "View in source") [&#x24C9;][1]
 
 Checks if the owner entry *is* assigned to a prototype.
 
@@ -343,10 +571,16 @@ Checks if the owner entry *is* assigned to a prototype.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypeisprivate"><code>Alias.prototype.isPrivate()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L219 "View in source") [&#x24C9;][1]
+## `isPrivate`
+
+<!-- div -->
+
+<h3 id="isprivate"><code>isPrivate()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L202 "View in source") [&#x24C9;][1]
 
 Checks if the owner entry is private.
 
@@ -357,10 +591,16 @@ Checks if the owner entry is private.
 
 <!-- /div -->
 
+<!-- /div -->
+
 <!-- div -->
 
-<h3 id="aliasprototypeisstatic"><code>Alias.prototype.isStatic()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/alias.js#L229 "View in source") [&#x24C9;][1]
+## `isStatic`
+
+<!-- div -->
+
+<h3 id="isstatic"><code>isStatic()</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/alias.js#L211 "View in source") [&#x24C9;][1]
 
 Checks if the owner entry is *not* assigned to a prototype.
 
@@ -375,4 +615,4 @@ Checks if the owner entry is *not* assigned to a prototype.
 
 <!-- /div -->
 
- [1]: #alias "Jump back to the TOC."
+ [1]: #constructor "Jump back to the TOC."

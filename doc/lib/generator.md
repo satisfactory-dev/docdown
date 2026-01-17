@@ -1,4 +1,4 @@
-# docdown <sup>feef7467de079667731d6beab0c2d02ed5613e34</sup>
+# docdown <sup>e0188188c7a4499ddbf7583c7d707439026e2e00</sup>
 
 <!-- div class="toc-container" -->
 
@@ -6,6 +6,13 @@
 
 ## `generateDoc`
 * <a href="#generatedocthe-the">`generateDoc`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `organized`
+* <a href="#organized">`organized`</a>
 
 <!-- /div -->
 
@@ -20,7 +27,7 @@
 <!-- div -->
 
 <h3 id="generatedocthe-the"><code>generateDoc(The, The)</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/lib/generator.js#L96 "View in source") [&#x24C9;][1]
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/generator.js#L96 "View in source") [&#x24C9;][1]
 
 Generates the documentation from JS source.
 
@@ -30,6 +37,23 @@ Generates the documentation from JS source.
 
 #### Returns
 *(string)*: Returns the documentation markdown.
+
+---
+
+<!-- /div -->
+
+<!-- /div -->
+
+<!-- div -->
+
+## `organized`
+
+<!-- div -->
+
+<h3 id="organized"><code>organized</code></h3>
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/e0188188c7a4499ddbf7583c7d707439026e2e00/lib/generator.js#L101 "View in source") [&#x24C9;][1]
+
+
 
 ---
 
