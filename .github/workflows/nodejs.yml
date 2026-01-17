@@ -53,10 +53,10 @@ jobs:
                   node-version: ${{ matrix.node_version }}
                   cache: 'npm'
             - name: install clean
-              if: ${{ matrix.node_version > 6 }}
+              if: ${{ matrix.node_version > 9 }}
               run: npm ci
             - name: install dirty
-              if: ${{ matrix.node_version == 6 }}
+              if: ${{ matrix.node_version <= 9 }}
               run: npm install
             - run: npm run doc
     coverage--node:
