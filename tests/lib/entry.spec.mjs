@@ -38,12 +38,12 @@ describe('docdown', () => {
 					[['bat'], ['bat']],
 				],
 				'two aliases': [
-					[['bar', 'bat'], ['bar+bat']],
-					[['bat', 'bar'], ['bat+bar']],
+					[['bar', 'bat'], ['bar']],
+					[['bat', 'bar'], ['bat']],
 				],
 				'three aliases': [
-					[['bar', 'bat', 'baz'], ['bar+bat\n+baz']],
-					[['bat', 'bar', 'baz'], ['bat+bar\n+baz']],
+					[['bar', 'bat', 'baz'], ['bar']],
+					[['bat', 'bar', 'baz'], ['bat']],
 				],
 			};
 
@@ -59,7 +59,7 @@ describe('docdown', () => {
 								 *
 								 * ${
 									aliases.length > 0
-										? `@alias ${aliases.join('\n\t\t\t\t\t\t\t +')}`
+										? `@alias ${aliases.join('\n\t\t\t\t\t\t\t\t * @alias ')}`
 										: ''
 								}
 								 */
