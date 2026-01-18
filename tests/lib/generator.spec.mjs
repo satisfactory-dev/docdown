@@ -17,7 +17,6 @@ import {
 
 import {
 	basename,
-	dirname,
 } from 'node:path';
 
 import {
