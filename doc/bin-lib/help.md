@@ -1,4 +1,4 @@
-# docdown <sup>bde6ac6f7b01bc7ae0862803ca74f01ef76814d9</sup>
+# docdown <sup>94eab5f7071c465cff2aefcb55fbfdf608968235</sup>
 
 <!-- div class="toc-container" -->
 
@@ -20,7 +20,7 @@
 <!-- div -->
 
 <h3 id="help"><code>help()</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/bde6ac6f7b01bc7ae0862803ca74f01ef76814d9/bin-lib/help.js#L6 "View in source") [&#x24C9;][1]
+https://github.com/satisfactory-dev/docdown/blob/94eab5f7071c465cff2aefcb55fbfdf608968235/bin-lib/help.js#L6 [&#x24C9;][1]
 
 Generates the help text for the docdown cli tool
 
