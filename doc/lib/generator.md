@@ -1,4 +1,4 @@
-# docdown <sup>94eab5f7071c465cff2aefcb55fbfdf608968235</sup>
+# docdown <sup>8e1806369a0996e66d218945d0f98dd4d98a0999</sup>
 
 <!-- div class="toc-container" -->
 
@@ -27,7 +27,7 @@
 <!-- div -->
 
 <h3 id="generatedocthe-the"><code>generateDoc(The, The)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/94eab5f7071c465cff2aefcb55fbfdf608968235/lib/generator.js#L96 [&#x24C9;][1]
+https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/lib/generator.js#L98
 
 Generates the documentation from JS source.
 
@@ -51,7 +51,7 @@ Generates the documentation from JS source.
 <!-- div -->
 
 <h3 id="organized"><code>organized</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/94eab5f7071c465cff2aefcb55fbfdf608968235/lib/generator.js#L101 [&#x24C9;][1]
+https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/lib/generator.js#L103
 
 
 

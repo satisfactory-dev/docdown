@@ -1,4 +1,4 @@
-# docdown <sup>94eab5f7071c465cff2aefcb55fbfdf608968235</sup>
+# docdown <sup>8e1806369a0996e66d218945d0f98dd4d98a0999</sup>
 
 <!-- div class="toc-container" -->
 
@@ -22,7 +22,7 @@
 <!-- div -->
 
 <h3 id="utilprototypecomparenaturalvalue-other"><code>util.prototype.compareNatural(value, other)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/94eab5f7071c465cff2aefcb55fbfdf608968235/lib/util.js#L22 [&#x24C9;][1]
+https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/lib/util.js#L22
 
 The `Array#sort` comparator to produce a
 [natural sort order](https://en.wikipedia.org/wiki/Natural_sort_order).
@@ -41,7 +41,7 @@ The `Array#sort` comparator to produce a
 <!-- div -->
 
 <h3 id="utilprototypeformatstring"><code>util.prototype.format(string)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/94eab5f7071c465cff2aefcb55fbfdf608968235/lib/util.js#L50 [&#x24C9;][1]
+https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/lib/util.js#L50
 
 Performs common string formatting operations.
 
@@ -58,7 +58,7 @@ Performs common string formatting operations.
 <!-- div -->
 
 <h3 id="utilprototypeparsecomment"><code>util.prototype.parse(comment)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/94eab5f7071c465cff2aefcb55fbfdf608968235/lib/util.js#L85 [&#x24C9;][1]
+https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/lib/util.js#L85
 
 Parses the JSDoc `comment` into an object.
 
