@@ -129,6 +129,44 @@ describe('docdown', () => {
 			})
 		})
 
+		describe('::getEntries()', () => {
+			it('defaults to an empty array', () => {
+				assert.deepEqual(Entry.getEntries(''), [])
+			})
+			it('has one entry', () => {
+				assert.equal(
+					Entry.getEntries(
+						strip_test_spacing(`/**
+						 * Some description
+						 * @return void
+						 */
+						function foo() {}`),
+						'',
+					).length,
+					1,
+				);
+			})
+			it('has two entries', () => {
+				assert.equal(
+					Entry.getEntries(
+						strip_test_spacing(`/**
+						 * Some description
+						 * @return void
+						 */
+						function foo() {}
+
+						/**
+						 * Some description
+						 * @return void
+						 */
+						function bar() {}`),
+						'',
+					).length,
+					2,
+				);
+			})
+		})
+
 		describe('::getExample()', () => {
 			void it('extracts js example', () => {
 				const entry = new Entry(
@@ -327,44 +365,6 @@ describe('docdown', () => {
 					})
 				}
 			}
-		})
-
-		describe('::getEntries()', () => {
-			it('defaults to an empty array', () => {
-				assert.deepEqual(Entry.getEntries(''), [])
-			})
-			it('has one entry', () => {
-				assert.equal(
-					Entry.getEntries(
-						strip_test_spacing(`/**
-						 * Some description
-						 * @return void
-						 */
-						function foo() {}`),
-						'',
-					).length,
-					1,
-				);
-			})
-			it('has two entries', () => {
-				assert.equal(
-					Entry.getEntries(
-						strip_test_spacing(`/**
-						 * Some description
-						 * @return void
-						 */
-						function foo() {}
-
-						/**
-						 * Some description
-						 * @return void
-						 */
-						function bar() {}`),
-						'',
-					).length,
-					2,
-				);
-			})
 		})
 	})
 })
