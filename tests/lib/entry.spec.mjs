@@ -11,7 +11,6 @@ import {
 	strip_test_spacing,
 } from './utilities.mjs';
 
-describe('docdown', () => {
 	describe('Entry', () => {
 		describe('::constructor()', () => {
 			it('defaults lang to js', () => {
@@ -423,4 +422,3 @@ describe('docdown', () => {
 			})
 		})
 	})
-})
