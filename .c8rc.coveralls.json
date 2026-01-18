@@ -2,5 +2,5 @@
 	"reporter": ["lcovonly"],
 	"report-dir": "./coverage",
 	"all": true,
-	"include": ["index.js", "lib/*.js", "bin/docdown.js"]
+	"include": ["index.js", "lib/*.js", "bin/docdown.js", "bin-lib/*.js"]
 }

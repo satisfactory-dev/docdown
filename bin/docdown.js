@@ -7,53 +7,14 @@ var fs = require('fs'),
 
 /** Load other modules */
 var
+    {
+      getOption,
+    } = require('../bin-lib/options.js'),
+    help = require('../bin-lib/help.js'),
     docdown = require('../index.js');
 
 /** The list of arguments provided */
 var argv = process.argv;
-
-/*----------------------------------------------------------------------------*/
-
-/** @typedef {'lang'|'sort'|'style'|'title'|'toc'|'url'} OptionName */
-
-/**
- * Gets the value for the given option name. If no value is available the
- * `defaultValue` is returned.
- *
- * @private
- * @param {OptionName} name The name of the option.
- * @param {*} defaultValue The default option value.
- * @returns {*} Returns the option value.
- */
-function getOption(name, defaultValue) {
-  return process.argv.reduce(function(result, value) {
-    value = optionToValue(name, value);
-
-    return value == null ? result : value;
-  }, defaultValue);
-}
-
-/**
- * Extracts the option value from an option string.
- *
- * @private
- * @param {OptionName} name The name of the option to inspect.
- * @param {string} string The options string.
- * @returns {string|undefined} Returns the option value, else `undefined`.
- */
-function optionToValue(name, string) {
-  /** @type {string|undefined} */
-  let result;
-  const match = string.match(RegExp('^' + name + '(?:=([\\s\\S]+))?$'));
-  if (match) {
-    [, result] = match;
-    result = result ? result.trim() : true;
-  }
-  if (result === 'false') {
-    return false;
-  }
-  return result || undefined;
-}
 
 /*----------------------------------------------------------------------------*/
 
@@ -67,17 +28,7 @@ if (
   argv.includes('-h') ||
   argv.includes('--help')
 ) {
-  console.log([
-    'Usage:',
-    '  docdown inputFile.js outputFile.md [options]',
-    'Options:',
-    '  lang="js"                   The language indicator for code blocks.',
-    '  sort=true|false             Specify whether entries are sorted.',
-    '  style="default|github"      The hash style for links.',
-    '  title="title"               The documentation title.',
-    '  toc="categories|properties" The table of contents organization style.',
-    '  url="url"                   The source URL.'
-  ].join('\n'));
+  console.log(help());
   process.exit(1);
 }
 
