@@ -1,4 +1,4 @@
-# docdown <sup>feef7467de079667731d6beab0c2d02ed5613e34</sup>
+# docdown <sup>87b47c1d134d64bc4d17398eacf82862ced1090b</sup>
 
 <!-- div class="toc-container" -->
 
@@ -20,7 +20,7 @@
 <!-- div -->
 
 <h3 id="docdownoptions"><code>docdown(options)</code></h3>
-[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/feef7467de079667731d6beab0c2d02ed5613e34/index.js#L26 "View in source") [&#x24C9;][1]
+[&#x24C8;](https://github.com/satisfactory-dev/docdown/blob/87b47c1d134d64bc4d17398eacf82862ced1090b/index.js#L26 "View in source") [&#x24C9;][1]
 
 Generates Markdown documentation based on JSDoc comments.
 
