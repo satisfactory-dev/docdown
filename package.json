@@ -6,7 +6,11 @@
   "bin": {
     "docdown": "bin/docdown.js"
   },
-  "keywords": "documentation, jsdoc, markdown",
+  "keywords": [
+    "documentation",
+    "jsdoc",
+    "markdown"
+  ],
   "author": "SignpostMarv",
   "contributors": [
     "John-David Dalton <john.david.dalton@gmail.com>",
