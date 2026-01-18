@@ -1,3 +1,8 @@
+/*!
+ * Copyright 2026 SignpostMarv
+ * Available under MIT license
+ */
+
 /**
  * @param {string} value
  *
