@@ -26,8 +26,8 @@ coverage--bin: docs
 
 coverage:
 	@git clean -fxd coverage
-	@make nvm--exec VERSION=12 CMD="npm install -g c8@7"
-	@make nvm--exec VERSION=12 CMD="c8 --reporter lcovonly -o ./coverage/from-usage/ make coverage--bin"
+	@make nvm--exec VERSION=22 CMD="npm install -g c8@10"
+	@make nvm--exec VERSION=22 CMD="c8 --reporter lcovonly -o ./coverage/from-usage/ make coverage--bin"
 	@make nvm--exec VERSION=22 CMD="npm install -g c8@10"
 	@make nvm--exec VERSION=22 CMD="c8 --reporter lcovonly -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
 	@cp -r ./coverage/*/tmp/*.json ./coverage/tmp
