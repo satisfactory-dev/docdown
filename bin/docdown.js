@@ -7,9 +7,7 @@ var fs = require('fs'),
 
 /** Load other modules */
 var
-    {
-      getOption,
-    } = require('../bin-lib/options.js'),
+    getOption = require('../bin-lib/options.js')(process.argv),
     help = require('../bin-lib/help.js'),
     docdown = require('../index.js');
 

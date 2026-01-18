@@ -5,19 +5,28 @@
 /** @typedef {'lang'|'sort'|'style'|'title'|'toc'|'url'} OptionName */
 
 /**
+ * Wraps functions in a context provider to enable testing without relying on process.argv
+ *
+ * @param {string[]} context
+ */
+function fromContext(context) {
+/**
  * Gets the value for the given option name. If no value is available the
  * `defaultValue` is returned.
  *
  * @param {OptionName} name The name of the option.
- * @param {*} defaultValue The default option value.
- * @returns {*} Returns the option value.
+ * @param {string|boolean|undefined} defaultValue The default option value.
+ * @returns {string|boolean|undefined} Returns the option value.
  */
 function getOption(name, defaultValue) {
-  return process.argv.reduce(function(result, value) {
+    return context.reduce(function(result, value) {
     value = optionToValue(name, value);
 
     return value == null ? result : value;
   }, defaultValue);
+}
+
+  return getOption;
 }
 
 /**
@@ -25,11 +34,11 @@ function getOption(name, defaultValue) {
  *
  * @param {OptionName} name The name of the option to inspect.
  * @param {string} string The options string.
- * @returns {string|undefined} Returns the option value, else `undefined`.
+ * @returns {string|boolean|undefined} Returns the option value, else `undefined`.
  */
 function optionToValue(name, string) {
   /** @type {string|undefined} */
-  let result;
+  let result = undefined;
   const match = string.match(RegExp('^' + name + '(?:=([\\s\\S]+))?$'));
   if (match) {
     [, result] = match;
@@ -41,7 +50,4 @@ function optionToValue(name, string) {
   return result || undefined;
 }
 
-module.exports = {
-  getOption,
-  optionToValue,
-};
+module.exports = fromContext;

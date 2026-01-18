@@ -18,12 +18,15 @@ init:
 	@for version in $(VERSIONS); do make nvm--install VERSION="$$version"; done
 	@make nvm--exec VERSION=8 CMD="npm install"
 
+coverage--bin: docs
+	./bin/docdown.js > /dev/null 2>&1 || true
+
 coverage:
 	@git clean -fxd coverage
 	@make nvm--exec VERSION=10 CMD="npm install -g c8@7"
-	@make nvm--exec VERSION=10 CMD="c8 -o ./coverage/from-usage/ make docs"
+	@make nvm--exec VERSION=10 CMD="c8 --reporter lcovonly -o ./coverage/from-usage/ make coverage--bin"
 	@make nvm--exec VERSION=21 CMD="npm install -g c8@10"
-	@make nvm--exec VERSION=21 CMD="c8 -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
+	@make nvm--exec VERSION=21 CMD="c8 --reporter lcovonly -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
 	@cp -r ./coverage/*/tmp/*.json ./coverage/tmp
 	@make nvm--exec VERSION=21 CMD="c8 report"
 
