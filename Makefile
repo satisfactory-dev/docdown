@@ -1,6 +1,6 @@
 .PHONY: coverage
 
-VERSIONS = 6 7 8 9 10 11 22 24 25
+VERSIONS = 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
 nvm:
 	@. ${NVM_DIR}/nvm.sh && nvm $(CMD)
@@ -16,7 +16,7 @@ nvm--exec: nvm--install
 
 init:
 	@for version in $(VERSIONS); do make nvm--install VERSION="$$version"; done
-	@make nvm--exec VERSION=8 CMD="npm install"
+	@make nvm--exec VERSION=12 CMD="npm install"
 
 coverage--bin: docs
 	rm doc/index.md
@@ -26,8 +26,8 @@ coverage--bin: docs
 
 coverage:
 	@git clean -fxd coverage
-	@make nvm--exec VERSION=10 CMD="npm install -g c8@7"
-	@make nvm--exec VERSION=10 CMD="c8 --reporter lcovonly -o ./coverage/from-usage/ make coverage--bin"
+	@make nvm--exec VERSION=12 CMD="npm install -g c8@7"
+	@make nvm--exec VERSION=12 CMD="c8 --reporter lcovonly -o ./coverage/from-usage/ make coverage--bin"
 	@make nvm--exec VERSION=22 CMD="npm install -g c8@10"
 	@make nvm--exec VERSION=22 CMD="c8 --reporter lcovonly -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
 	@cp -r ./coverage/*/tmp/*.json ./coverage/tmp

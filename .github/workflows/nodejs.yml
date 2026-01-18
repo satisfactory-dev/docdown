@@ -29,7 +29,7 @@ jobs:
         strategy:
             matrix:
                 node_version:
-                    - 10
+                    - 12
                     - 22
         steps:
             - uses: actions/checkout@v4
@@ -46,11 +46,17 @@ jobs:
         strategy:
             matrix:
                 node_version:
-                    - 6
-                    - 7
-                    - 8
-                    - 9
-                    - 11
+                    - 12
+                    - 13
+                    - 14
+                    - 15
+                    - 16
+                    - 17
+                    - 18
+                    - 19
+                    - 20
+                    - 21
+                    - 23
                     - 24
                     - 25
         steps:
@@ -61,11 +67,7 @@ jobs:
                   node-version: ${{ matrix.node_version }}
                   cache: 'npm'
             - name: install clean
-              if: ${{ matrix.node_version > 9 }}
               run: npm ci
-            - name: install dirty
-              if: ${{ matrix.node_version <= 9 }}
-              run: npm install
             - run: make docs
     coverage--node:
         name: Node Coverage
