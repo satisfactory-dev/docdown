@@ -282,9 +282,10 @@ describe('docdown', () => {
 					'',
 				);
 
+				assert.ok(!entry.isAlias());
 				assert.equal(entry.getHash('default'), 'Foo-foo')
 			})
-			it('default style decorated as alias', () => {
+			it('default style decorated as forced-alias', () => {
 				const entry = new Entry(
 					strip_test_spacing(
 						`/**
