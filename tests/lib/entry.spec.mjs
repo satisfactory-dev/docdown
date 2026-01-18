@@ -168,6 +168,119 @@ describe('docdown', () => {
 			})
 		})
 
+		describe('::getHash()', () => {
+			it('default style decorated as prototype', () => {
+				const entryMultipleTags = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @memberOf Foo
+						 * @memberOf Bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+				const entrySpacedValue = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @memberOf Foo Bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+				const entryCommaValue = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @memberOf Foo,Bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+
+				assert.equal(entryMultipleTags.getHash('default'), 'Foo-prototype-foo')
+				assert.equal(entrySpacedValue.getHash('default'), 'Foo Bar-prototype-foo')
+				assert.equal(entryCommaValue.getHash('default'), 'Bar-prototype-foo')
+			})
+			it('default style decorated as static', () => {
+				const entry = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @static
+						 * @memberOf Foo
+						 * @memberOf Bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+
+				assert.equal(entry.getHash('default'), 'Foo-foo')
+			})
+			it('default style decorated as alias', () => {
+				const entry = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @alias bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+				entry.isAlias = () => true;
+				entry.getOwner = () => ({getName: () => 'baz'});
+
+				assert.equal(entry.getHash('default'), 'baz')
+			})
+		})
+
+		describe('::getMembers()', () => {
+			it('returns array', () => {
+				const entry = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @memberOf Foo,Bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+
+				assert.deepEqual(entry.getMembers(), ['Bar', 'Foo'])
+			})
+		})
+
+		describe('::getName()', () => {
+			it('from tag', () => {
+				const entry = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @name bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+
+				assert.deepEqual(entry.getName(), 'bar')
+			})
+		})
+
 		describe('::getParamType()', () => {
 			/** @type {Object<string, [string, string, string|undefined][]} */
 			const dataset = {
