@@ -1,6 +1,6 @@
 .PHONY: coverage
 
-VERSIONS = 6 7 8 9 10 11 21 24 25
+VERSIONS = 6 7 8 9 10 11 22 24 25
 
 nvm:
 	@. ${NVM_DIR}/nvm.sh && nvm $(CMD)
@@ -28,10 +28,10 @@ coverage:
 	@git clean -fxd coverage
 	@make nvm--exec VERSION=10 CMD="npm install -g c8@7"
 	@make nvm--exec VERSION=10 CMD="c8 --reporter lcovonly -o ./coverage/from-usage/ make coverage--bin"
-	@make nvm--exec VERSION=21 CMD="npm install -g c8@10"
-	@make nvm--exec VERSION=21 CMD="c8 --reporter lcovonly -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
+	@make nvm--exec VERSION=22 CMD="npm install -g c8@10"
+	@make nvm--exec VERSION=22 CMD="c8 --reporter lcovonly -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
 	@cp -r ./coverage/*/tmp/*.json ./coverage/tmp
-	@make nvm--exec VERSION=21 CMD="c8 report"
+	@make nvm--exec VERSION=22 CMD="c8 report"
 	@git restore coverage/tmp/.gitkeep
 
 docs:

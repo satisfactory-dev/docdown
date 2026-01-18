@@ -30,6 +30,7 @@ jobs:
             matrix:
                 node_version:
                     - 10
+                    - 22
         steps:
             - uses: actions/checkout@v4
             - name: Use Node.js ${{ matrix.node_version }}
@@ -50,7 +51,6 @@ jobs:
                     - 8
                     - 9
                     - 11
-                    - 21
                     - 24
                     - 25
         steps:
@@ -73,10 +73,10 @@ jobs:
         needs: fail-early
         steps:
             - uses: actions/checkout@v4
-            - name: Use Node.js 21
+            - name: Use Node.js 22
               uses: actions/setup-node@v6
               with:
-                  node-version: 21
+                  node-version: 22
                   cache: 'npm'
             - run: npm ci
             - run: npm install -g c8@10
