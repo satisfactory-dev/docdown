@@ -381,7 +381,7 @@ describe('docdown', () => {
 			})
 		})
 
-		describe('::getType', () => {
+		describe('::getType()', () => {
 			it('capitalises array', () => {
 				const entry = new Entry(
 					strip_test_spacing(
