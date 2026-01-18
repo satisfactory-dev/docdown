@@ -366,5 +366,40 @@ describe('docdown', () => {
 				}
 			}
 		})
+
+		describe('::getRelated()', () => {
+			it('has @see tags', () => {
+				const entry = new Entry(
+					strip_test_spacing(
+						`/**
+						 * foo bar
+						 *
+						 * @see foobar
+						 * @see bar
+						 */
+						function foo() {}`,
+					),
+					'',
+				);
+
+				assert.deepEqual(entry.getRelated(), ['[foobar](#foobar)'])
+			})
+		})
+
+		describe('::getType', () => {
+			it('capitalises array', () => {
+				const entry = new Entry(
+					strip_test_spacing(
+						`/**
+						 * @type {array}
+						 */
+						const foo = ['bar'];`,
+					),
+					'',
+				);
+
+				assert.equal(entry.getType(), 'Array');
+			})
+		})
 	})
 })
