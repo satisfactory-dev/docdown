@@ -24,7 +24,7 @@ coverage:
 	@make nvm--exec VERSION=10 CMD="c8 -o ./coverage/from-usage/ make docs"
 	@make nvm--exec VERSION=21 CMD="npm install -g c8@10"
 	@make nvm--exec VERSION=21 CMD="c8 -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
-	cp -r ./coverage/*/tmp/*.json ./coverage/tmp
+	@cp -r ./coverage/*/tmp/*.json ./coverage/tmp
 	@make nvm--exec VERSION=21 CMD="c8 report"
 
 docs:
