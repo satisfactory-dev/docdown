@@ -31,6 +31,7 @@ coverage:
 	@make nvm--exec VERSION=21 CMD="c8 --reporter lcovonly -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'"
 	@cp -r ./coverage/*/tmp/*.json ./coverage/tmp
 	@make nvm--exec VERSION=21 CMD="c8 report"
+	@git restore coverage/tmp/.gitkeep
 
 docs:
 	@node bin/docdown index.js doc/index.md style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
