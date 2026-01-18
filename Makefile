@@ -35,9 +35,9 @@ coverage:
 	@git restore coverage/tmp/.gitkeep
 
 docs:
-	@node bin/docdown index.js doc/index.md style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
-	@find lib -iname "*.js" | sed "s/\.js$///" | xargs -I{} node bin/docdown "{}.js" "doc/{}.md" style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url="https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/{}.js"
-	@find bin-lib -iname "*.js" | sed "s/\.js$///" | xargs -I{} node bin/docdown "{}.js" "doc/{}.md" style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url="https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/{}.js"
+	@node bin/docdown index.js doc/index.md tocLink=false style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
+	@find lib -iname "*.js" | sed "s/\.js$///" | xargs -I{} node bin/docdown "{}.js" "doc/{}.md" tocLink=false style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url="https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/{}.js"
+	@find bin-lib -iname "*.js" | sed "s/\.js$///" | xargs -I{} node bin/docdown "{}.js" "doc/{}.md" tocLink=false style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url="https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/{}.js"
 
 rebuild-fixtures:
 	@find tests/fixtures/ -iname "*.js" | sed "s/\.js$///" | xargs -I{} node bin/docdown "{}.js" "{}.md" url=./

@@ -40,7 +40,8 @@ var options = {
   'style': getOption('style'),
   'title': getOption('title'),
   'toc': getOption('toc'),
-  'url': getOption('url')
+  'url': getOption('url'),
+  tocLink: getOption('tocLink'),
 };
 
 var output = docdown(options);
