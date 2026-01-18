@@ -2,7 +2,7 @@
 
 /*----------------------------------------------------------------------------*/
 
-/** @typedef {'lang'|'sort'|'style'|'title'|'toc'|'url'} OptionName */
+/** @typedef {'lang'|'sort'|'style'|'title'|'toc'|'url'|'--force'} OptionName */
 
 /**
  * Wraps functions in a context provider to enable testing without relying on process.argv

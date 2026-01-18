@@ -45,6 +45,29 @@ var options = {
 
 var output = docdown(options);
 
+const previous = fs.existsSync(outputFile) ? fs.readFileSync(outputFile).toString() : '';
+
+if (
+  !getOption('--force', false) &&
+  options.style == 'github' &&
+  'string' === typeof options.url &&
+  previous != '' &&
+  /\/blob\/[0-9a-f]{40}\//.test(options.url)
+) {
+  const previousWithoutGitCommitHash = previous.replace(/\b[0-9a-f]{40}\b/g, '');
+  const currentWithoutGitCommitHash = output.replace(/\b[0-9a-f]{40}\b/g, '');
+
+  if (previousWithoutGitCommitHash == currentWithoutGitCommitHash) {
+    console.log(
+      `skipping write to ${
+        fileName
+      }, as contents have not changed. pass force argument to force update.`
+    );
+
+    process.exit(0)
+  }
+}
+
 fs.writeFileSync(outputFile, output, 'utf8');
 
 process.exit(0);

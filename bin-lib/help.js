@@ -13,7 +13,8 @@ function help() {
     '  style="default|github"      The hash style for links.',
     '  title="title"               The documentation title.',
     '  toc="categories|properties" The table of contents organization style.',
-    '  url="url"                   The source URL.'
+    '  url="url"                   The source URL.',
+    '  --force                     Force the docs to be written to if writing would only leave commit hash-related changes',
   ].join('\n');
 }
 
