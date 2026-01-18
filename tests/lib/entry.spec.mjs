@@ -1,20 +1,15 @@
 import {
-  describe,
-  it,
+	describe,
+	it,
 } from 'node:test';
 
 import assert from 'node:assert/strict';
 
 import Entry from '../../lib/entry.js';
 
-/**
- * @param {string} value
- *
- * @return {string}
- */
-function strip_test_spacing(value) {
-	return value.replace(/^\t+/, '');
-}
+import {
+	strip_test_spacing,
+} from './utilities.mjs';
 
 describe('docdown', () => {
 	describe('Entry', () => {
