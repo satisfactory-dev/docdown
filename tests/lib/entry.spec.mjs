@@ -29,29 +29,33 @@ describe('docdown', () => {
 		})
 
 		describe('::getAliases()', () => {
-			/** @type {Object<string, [string[], string[]][]} */
+			/** @type {Object<string, [string[], string[], string[]][]} */
 			const dataset = {
 				'no aliases': [
-					[[], []],
+					[[], [], []],
 				],
 				'one alias': [
-					[['bat'], ['bat']],
+					[['bat'], ['bat'], ['bat']],
 				],
 				'two aliases': [
-					[['bar', 'bat'], ['bar']],
-					[['bat', 'bar'], ['bat']],
+					[['bar', 'bat'], ['bar'], ['bar', 'bat']],
+					[['bat', 'bar'], ['bat'], ['bar', 'bat']],
 				],
 				'three aliases': [
-					[['bar', 'bat', 'baz'], ['bar']],
-					[['bat', 'bar', 'baz'], ['bat']],
+					[['bar', 'bat', 'baz'], ['bar'], ['bar', 'bat', 'baz']],
+					[['bat', 'bar', 'baz'], ['bat'], ['bar', 'bat', 'baz']],
 				],
 			};
 
 			for (const [test, datasets] of Object.entries(dataset)) {
 				for (let i = 0; i < datasets.length; ++i) {
-					const [aliases, expectation] = datasets[i];
+					const [
+						aliases,
+						expectationMultipleTags,
+						expectationMultipleValues,
+					] = datasets[i];
 
-					void it(`${test} [${i}]`, () => {
+					void it(`${test} [${i}] as multiple tags`, () => {
 						const entry = new Entry(
 							strip_test_spacing(
 								`/**
@@ -68,8 +72,29 @@ describe('docdown', () => {
 							'',
 						);
 
-						assert.deepEqual(entry.getAliases().map((e) => e.getName()), expectation);
-						assert.equal(entry.getAliases(0)?.getName(), expectation[0] || undefined);
+						assert.deepEqual(entry.getAliases().map((e) => e.getName()), expectationMultipleTags);
+						assert.equal(entry.getAliases(0)?.getName(), expectationMultipleTags[0] || undefined);
+					})
+
+					void it(`${test} [${i}] as multiple values`, () => {
+						const entry = new Entry(
+							strip_test_spacing(
+								`/**
+								 * Some function
+								 *
+								 * ${
+									aliases.length > 0
+										? `@alias ${aliases.join(', ')}`
+										: ''
+								}
+								 */
+								function foo(foo) {}`
+							),
+							'',
+						);
+
+						assert.deepEqual(entry.getAliases().map((e) => e.getName()), expectationMultipleValues);
+						assert.equal(entry.getAliases(0)?.getName(), expectationMultipleValues[0] || undefined);
 					})
 				}
 			}
