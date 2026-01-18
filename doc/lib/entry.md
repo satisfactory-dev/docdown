@@ -1,4 +1,4 @@
-# docdown <sup>db34353dceaad6ad66a474c3f0df2b063fec05be</sup>
+# docdown <sup>b4ef4464e5af74bd41be34762439f69a415cbf7a</sup>
 
 <!-- div class="toc-container" -->
 
@@ -163,6 +163,13 @@
 
 <!-- /div -->
 
+<!-- div -->
+
+## `result`
+* <a href="#result">`result`</a>
+
+<!-- /div -->
+
 <!-- /div -->
 
 <!-- div class="doc-container" -->
@@ -174,7 +181,7 @@
 <!-- div -->
 
 <h3 id="-getcall"><code>#getCall</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L225
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L225
 
 
 
@@ -191,7 +198,7 @@ https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b0
 <!-- div -->
 
 <h3 id="constructorentry-source-langjs"><code>constructor(entry, source, [lang='js'])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L180
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L180
 
 The Entry constructor.
 
@@ -213,7 +220,7 @@ The Entry constructor.
 <!-- div -->
 
 <h3 id="getaliasesindex"><code>getAliases(index)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L208
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L208
 
 Extracts the entry's `alias` objects.
 
@@ -236,7 +243,7 @@ Extracts the entry's `alias` objects.
 <!-- div -->
 
 <h3 id="getcall"><code>getCall()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L232
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L232
 
 Extracts the function call from the entry.
 
@@ -256,7 +263,7 @@ Extracts the function call from the entry.
 <!-- div -->
 
 <h3 id="getcategory"><code>getCategory()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L278
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L278
 
 Extracts the entry's `category` data.
 
@@ -276,7 +283,7 @@ Extracts the entry's `category` data.
 <!-- div -->
 
 <h3 id="getdesc"><code>getDesc()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L295
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L295
 
 Extracts the entry's description.
 
@@ -296,7 +303,7 @@ Extracts the entry's description.
 <!-- div -->
 
 <h3 id="getexample"><code>getExample()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L316
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L316
 
 Extracts the entry's `example` data.
 
@@ -316,7 +323,7 @@ Extracts the entry's `example` data.
 <!-- div -->
 
 <h3 id="gethashstyle"><code>getHash([style])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L334
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L334
 
 Extracts the entry's hash value for permalinking.
 
@@ -339,7 +346,7 @@ Extracts the entry's hash value for permalinking.
 <!-- div -->
 
 <h3 id="getlinenumber"><code>getLineNumber()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L369
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L369
 
 Resolves the entry's line number.
 
@@ -359,7 +366,7 @@ Resolves the entry's line number.
 <!-- div -->
 
 <h3 id="getmembersindex"><code>getMembers([index])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L393
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L393
 
 Extracts the entry's `member` data.
 
@@ -367,7 +374,7 @@ Extracts the entry's `member` data.
 1. `[index]` *(number)*: The index of the array value to return.
 
 #### Returns
-*(Array|string)*: Returns the entry's `member` data.
+*(|Array|string)*: Returns the entry's `member` data.
 
 ---
 
@@ -382,7 +389,7 @@ Extracts the entry's `member` data.
 <!-- div -->
 
 <h3 id="getname"><code>getName()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L413
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L413
 
 Extracts the entry's `name` data.
 
@@ -402,7 +409,7 @@ Extracts the entry's `name` data.
 <!-- div -->
 
 <h3 id="getparamsindex"><code>getParams([index])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L432
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L432
 
 Extracts the entry's `param` data.
 
@@ -425,7 +432,7 @@ Extracts the entry's `param` data.
 <!-- div -->
 
 <h3 id="getrelated"><code>getRelated()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L467
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L467
 
 Extracts the entry's `see` data.
 
@@ -445,7 +452,7 @@ Extracts the entry's `see` data.
 <!-- div -->
 
 <h3 id="getreturns"><code>getReturns()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L489
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L491
 
 Extracts the entry's `returns` data.
 
@@ -465,7 +472,7 @@ Extracts the entry's `returns` data.
 <!-- div -->
 
 <h3 id="getsince"><code>getSince()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L511
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L513
 
 Extracts the entry's `since` data.
 
@@ -485,7 +492,7 @@ Extracts the entry's `since` data.
 <!-- div -->
 
 <h3 id="gettype"><code>getType()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L527
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L529
 
 Extracts the entry's `type` data.
 
@@ -505,7 +512,7 @@ Extracts the entry's `type` data.
 <!-- div -->
 
 <h3 id="isalias"><code>isAlias()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L548
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L550
 
 Checks if the entry is an alias.
 
@@ -525,7 +532,7 @@ Checks if the entry is an alias.
 <!-- div -->
 
 <h3 id="isctor"><code>isCtor()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L560
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L562
 
 Checks if the entry is a constructor.
 
@@ -545,7 +552,7 @@ Checks if the entry is a constructor.
 <!-- div -->
 
 <h3 id="isfunction"><code>isFunction()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L577
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L579
 
 Checks if the entry is a function reference.
 
@@ -565,7 +572,7 @@ Checks if the entry is a function reference.
 <!-- div -->
 
 <h3 id="islicense"><code>isLicense()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L599
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L601
 
 Checks if the entry is a license.
 
@@ -585,7 +592,7 @@ Checks if the entry is a license.
 <!-- div -->
 
 <h3 id="isplugin"><code>isPlugin()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L615
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L617
 
 Checks if the entry *is* assigned to a prototype.
 
@@ -605,7 +612,7 @@ Checks if the entry *is* assigned to a prototype.
 <!-- div -->
 
 <h3 id="isprivate"><code>isPrivate()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L635
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L637
 
 Checks if the entry is private.
 
@@ -625,12 +632,29 @@ Checks if the entry is private.
 <!-- div -->
 
 <h3 id="isstatic"><code>isStatic()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/db34353dceaad6ad66a474c3f0df2b063fec05be/lib/entry.js#L655
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L657
 
 Checks if the entry is *not* assigned to a prototype.
 
 #### Returns
 *(boolean)*: Returns `true` if not assigned to a prototype, else `false`.
+
+---
+
+<!-- /div -->
+
+<!-- /div -->
+
+<!-- div -->
+
+## `result`
+
+<!-- div -->
+
+<h3 id="result"><code>result</code></h3>
+https://github.com/satisfactory-dev/docdown/blob/b4ef4464e5af74bd41be34762439f69a415cbf7a/lib/entry.js#L105
+
+
 
 ---
 
