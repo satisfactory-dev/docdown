@@ -59,7 +59,7 @@
 <!-- div -->
 
 <h3 id="foo"><code>foo()</code></h3>
-[&#x24C8;](./#L4 "View in source") [&#x24C9;][1]
+./#L4 [&#x24C9;][1]
 
 
 

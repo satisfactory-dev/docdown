@@ -56,7 +56,7 @@
 <!-- div -->
 
 <h3 id="bar"><code>Bar()</code></h3>
-[&#x24C8;](./#L7 "View in source") [&#x24C9;][1]
+./#L7 [&#x24C9;][1]
 
 
 
@@ -73,7 +73,7 @@
 <!-- div -->
 
 <h3 id="barfoostatic"><code>Bar.fooStatic()</code></h3>
-[&#x24C8;](./#L30 "View in source") [&#x24C9;][1]
+./#L30 [&#x24C9;][1]
 
 
 
@@ -90,7 +90,7 @@
 <!-- div -->
 
 <h3 id="barprototypefoo"><code>Bar.prototype.foo()</code></h3>
-[&#x24C8;](./#L12 "View in source") [&#x24C9;][1]
+./#L12 [&#x24C9;][1]
 
 
 
@@ -107,7 +107,7 @@
 <!-- div -->
 
 <h3 id="barprototypetestconst"><code>Bar.prototype.testConst</code></h3>
-[&#x24C8;](./#L36 "View in source") [&#x24C9;][1]
+./#L36 [&#x24C9;][1]
 
 
 
@@ -124,7 +124,7 @@
 <!-- div -->
 
 <h3 id="baz"><code>baz()</code></h3>
-[&#x24C8;](./#L23 "View in source") [&#x24C9;][1]
+./#L23 [&#x24C9;][1]
 
 
 
@@ -150,7 +150,7 @@
 <!-- div -->
 
 <h3 id="manual_category"><code>manual_category()</code></h3>
-[&#x24C8;](./#L62 "View in source") [&#x24C9;][1]
+./#L62 [&#x24C9;][1]
 
 
 

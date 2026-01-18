@@ -23,7 +23,7 @@
 <!-- div -->
 
 <h3 id="bazprototypebagoption"><code>baz.prototype.bag(option)</code></h3>
-[&#x24C8;](./#L34 "View in source") [&#x24C9;][1]
+./#L34 [&#x24C9;][1]
 
 
 
@@ -40,7 +40,7 @@
 <!-- div -->
 
 <h3 id="bazprototypebaroption"><code>baz.prototype.bar(option)</code></h3>
-[&#x24C8;](./#L47 "View in source") [&#x24C9;][1]
+./#L47 [&#x24C9;][1]
 
 
 
@@ -57,7 +57,7 @@
 <!-- div -->
 
 <h3 id="bazprototypebatoption"><code>baz.prototype.bat(option)</code></h3>
-[&#x24C8;](./#L24 "View in source") [&#x24C9;][1]
+./#L24 [&#x24C9;][1]
 
 
 
@@ -74,7 +74,7 @@
 <!-- div -->
 
 <h3 id="bazprototypefoooption"><code>baz.prototype.foo(option)</code></h3>
-[&#x24C8;](./#L14 "View in source") [&#x24C9;][1]
+./#L14 [&#x24C9;][1]
 
 
 

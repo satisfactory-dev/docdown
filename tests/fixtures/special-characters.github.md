@@ -20,7 +20,7 @@
 <!-- div -->
 
 <h3 id="foovalue"><code>foo(value)</code></h3>
-[&#x24C8;](./#L12 "View in source") [&#x24C9;][1]
+./#L12 [&#x24C9;][1]
 
 Logs markdown text to console
 
