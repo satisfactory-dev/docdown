@@ -10,21 +10,21 @@
  * @param {string[]} context
  */
 function fromContext(context) {
-/**
- * Gets the value for the given option name. If no value is available the
- * `defaultValue` is returned.
- *
- * @param {OptionName} name The name of the option.
- * @param {string|boolean|undefined} defaultValue The default option value.
- * @returns {string|boolean|undefined} Returns the option value.
- */
-function getOption(name, defaultValue) {
+  /**
+   * Gets the value for the given option name. If no value is available the
+   * `defaultValue` is returned.
+   *
+   * @param {OptionName} name The name of the option.
+   * @param {string|boolean|undefined} defaultValue The default option value.
+   * @returns {string|boolean|undefined} Returns the option value.
+   */
+  function getOption(name, defaultValue) {
     return context.reduce(function(result, value) {
-    value = optionToValue(name, value);
+      value = optionToValue(name, value);
 
-    return value == null ? result : value;
-  }, defaultValue);
-}
+      return value == null ? result : value;
+    }, defaultValue);
+  }
 
   return getOption;
 }
