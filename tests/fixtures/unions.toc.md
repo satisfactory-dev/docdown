@@ -31,7 +31,7 @@
 1. `option` *(string&#91;&#93;)|string)*: the option
 
 #### Returns
-*(&#42;)*: the result
+*(string|string&#91;&#93;)*: the result
 
 ---
 
@@ -48,7 +48,7 @@
 1. `option` *(||)*:
 
 #### Returns
-*(&#42;)*: reverse string
+*(Reverse|string)*: reverse string
 
 ---
 
@@ -82,7 +82,7 @@
 1. `option` *(string&#91;&#93;)|string)*: the option
 
 #### Returns
-*(&#42;)*: the result
+*(string&#91;&#93;)|string)*: the result
 
 ---
 
