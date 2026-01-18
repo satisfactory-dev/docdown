@@ -80,7 +80,7 @@ jobs:
                   cache: 'npm'
             - run: npm ci
             - run: npm install -g c8@10
-            - run: c8 -c ./.c8rc.coveralls.json -o ./coverage/from-usage/ make docs
+            - run: c8 -c ./.c8rc.coveralls.json -o ./coverage/from-usage/ make coverage--bin
             - run: c8 -c ./.c8rc.coveralls.json -o ./coverage/from-tests/ node --test './tests/**/*.spec.mjs'
             - run: cp -r ./coverage/*/tmp/*.json ./coverage/tmp
             - run: c8 -c ./.c8rc.coveralls.json report

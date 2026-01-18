@@ -19,6 +19,7 @@ init:
 	@make nvm--exec VERSION=8 CMD="npm install"
 
 coverage--bin: docs
+	rm doc/index.md
 	@node bin/docdown index.js doc/index.md --force style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
 	@git restore doc
 	./bin/docdown.js > /dev/null 2>&1 || true
