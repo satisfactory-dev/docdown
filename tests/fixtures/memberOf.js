@@ -1,0 +1,4 @@
+/**
+ * @memberOf Bar
+ */
+function foo() {}
