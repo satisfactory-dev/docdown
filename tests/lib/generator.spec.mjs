@@ -47,13 +47,13 @@ describe('generateDoc()', async () => {
 			]);
 
 			const options = {
-						path: filepathMarkdown,
-						url: './',
-						lang: 'js',
-						sort: true,
-						style: 'default',
-						title: `${basename(filepath)} API documentation`,
-						toc: 'properties',
+				path: filepathMarkdown,
+				url: './',
+				lang: 'js',
+				sort: true,
+				style: 'default',
+				title: `${basename(filepath)} API documentation`,
+				toc: 'properties',
 			};
 
 			assert.equal(
