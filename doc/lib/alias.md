@@ -1,4 +1,4 @@
-# docdown <sup>cef8da14c932ff2edb0b3de7a29360495db41c98</sup>
+# docdown <sup>f96c83273a56587be10ea7a03caea4d3d6e6e7f2</sup>
 
 <!-- div class="toc-container" -->
 
@@ -167,7 +167,7 @@
 <!-- div -->
 
 <h3 id="constructorname-owner"><code>constructor(name, owner)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L18
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L21
 
 The Alias constructor.
 
@@ -188,7 +188,7 @@ The Alias constructor.
 <!-- div -->
 
 <h3 id="getaliasesindex"><code>getAliases([index])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L29
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L32
 
 Extracts the entry's `alias` objects.
 
@@ -211,7 +211,7 @@ Extracts the entry's `alias` objects.
 <!-- div -->
 
 <h3 id="getcall"><code>getCall()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L38
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L41
 
 Extracts the function call from the owner entry.
 
@@ -231,7 +231,7 @@ Extracts the function call from the owner entry.
 <!-- div -->
 
 <h3 id="getcategory"><code>getCategory()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L47
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L50
 
 Extracts the owner entry's `category` data.
 
@@ -251,7 +251,7 @@ Extracts the owner entry's `category` data.
 <!-- div -->
 
 <h3 id="getdesc"><code>getDesc()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L56
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L59
 
 Extracts the owner entry's description.
 
@@ -271,7 +271,7 @@ Extracts the owner entry's description.
 <!-- div -->
 
 <h3 id="getexample"><code>getExample()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L65
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L68
 
 Extracts the owner entry's `example` data.
 
@@ -291,7 +291,7 @@ Extracts the owner entry's `example` data.
 <!-- div -->
 
 <h3 id="gethashstyle"><code>getHash([style])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L75
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L78
 
 Extracts the entry's hash value for permalinking.
 
@@ -314,7 +314,7 @@ Extracts the entry's hash value for permalinking.
 <!-- div -->
 
 <h3 id="getlinenumber"><code>getLineNumber()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L84
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L87
 
 Resolves the owner entry's line number.
 
@@ -334,7 +334,7 @@ Resolves the owner entry's line number.
 <!-- div -->
 
 <h3 id="getmembersindex"><code>getMembers([index])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L94
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L97
 
 Extracts the owner entry's `member` data.
 
@@ -357,7 +357,7 @@ Extracts the owner entry's `member` data.
 <!-- div -->
 
 <h3 id="getname"><code>getName()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L103
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L106
 
 Extracts the owner entry's `name` data.
 
@@ -377,7 +377,7 @@ Extracts the owner entry's `name` data.
 <!-- div -->
 
 <h3 id="getowner"><code>getOwner()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L112
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L115
 
 Gets the owner entry object.
 
@@ -397,7 +397,7 @@ Gets the owner entry object.
 <!-- div -->
 
 <h3 id="getparamsindex"><code>getParams([index])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L122
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L125
 
 Extracts the owner entry's `param` data.
 
@@ -420,7 +420,7 @@ Extracts the owner entry's `param` data.
 <!-- div -->
 
 <h3 id="getreturns"><code>getReturns()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L131
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L134
 
 Extracts the owner entry's `returns` data.
 
@@ -440,7 +440,7 @@ Extracts the owner entry's `returns` data.
 <!-- div -->
 
 <h3 id="getsince"><code>getSince()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L140
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L143
 
 Extracts the owner entry's `since` data.
 
@@ -460,7 +460,7 @@ Extracts the owner entry's `since` data.
 <!-- div -->
 
 <h3 id="gettype"><code>getType()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L149
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L152
 
 Extracts the owner entry's `type` data.
 
@@ -480,7 +480,7 @@ Extracts the owner entry's `type` data.
 <!-- div -->
 
 <h3 id="isalias"><code>isAlias()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L158
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L161
 
 Checks if the entry is an alias.
 
@@ -500,7 +500,7 @@ Checks if the entry is an alias.
 <!-- div -->
 
 <h3 id="isctor"><code>isCtor()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L167
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L170
 
 Checks if the owner entry is a constructor.
 
@@ -520,7 +520,7 @@ Checks if the owner entry is a constructor.
 <!-- div -->
 
 <h3 id="isfunction"><code>isFunction()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L176
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L179
 
 Checks if the entry is a function reference.
 
@@ -540,7 +540,7 @@ Checks if the entry is a function reference.
 <!-- div -->
 
 <h3 id="islicense"><code>isLicense()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L185
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L188
 
 Checks if the owner entry is a license.
 
@@ -560,7 +560,7 @@ Checks if the owner entry is a license.
 <!-- div -->
 
 <h3 id="isplugin"><code>isPlugin()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L194
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L197
 
 Checks if the owner entry *is* assigned to a prototype.
 
@@ -580,7 +580,7 @@ Checks if the owner entry *is* assigned to a prototype.
 <!-- div -->
 
 <h3 id="isprivate"><code>isPrivate()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L203
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L206
 
 Checks if the owner entry is private.
 
@@ -600,7 +600,7 @@ Checks if the owner entry is private.
 <!-- div -->
 
 <h3 id="isstatic"><code>isStatic()</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/cef8da14c932ff2edb0b3de7a29360495db41c98/lib/alias.js#L212
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/alias.js#L215
 
 Checks if the owner entry is *not* assigned to a prototype.
 

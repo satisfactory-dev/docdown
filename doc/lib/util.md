@@ -1,4 +1,4 @@
-# docdown <sup>e99d1f1d18470874651f75c515a5840975baad41</sup>
+# docdown <sup>f96c83273a56587be10ea7a03caea4d3d6e6e7f2</sup>
 
 <!-- div class="toc-container" -->
 
@@ -36,7 +36,7 @@
 <!-- div -->
 
 <h3 id="deparenthesizestr"><code>deparenthesize(str)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L106
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/util.js#L105
 
 Trims leading and trailing parentheses from a string
 
@@ -60,7 +60,7 @@ Trims leading and trailing parentheses from a string
 <!-- div -->
 
 <h3 id="regexexecindexregex-string-index"><code>regexExecIndex(regex, string, [index])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L117
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/util.js#L116
 
 Get the specified index of RegExpExecArray or an empty string
 
@@ -82,7 +82,7 @@ Get the specified index of RegExpExecArray or an empty string
 <!-- div -->
 
 <h3 id="utilprototypecomparenaturalvalue-other"><code>util.prototype.compareNatural(value, other)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L28
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/util.js#L27
 
 The `Array#sort` comparator to produce a [natural sort order](https://en.wikipedia.org/wiki/Natural_sort_order).
 
@@ -100,7 +100,7 @@ The `Array#sort` comparator to produce a [natural sort order](https://en.wikiped
 <!-- div -->
 
 <h3 id="utilprototypeformatstring"><code>util.prototype.format(string)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L56
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/util.js#L55
 
 Performs common string formatting operations.
 
@@ -117,7 +117,7 @@ Performs common string formatting operations.
 <!-- div -->
 
 <h3 id="utilprototypeparsecomment"><code>util.prototype.parse(comment)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L91
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/lib/util.js#L90
 
 Parses the JSDoc `comment` into an object.
 

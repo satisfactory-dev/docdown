@@ -1,4 +1,4 @@
-# docdown <sup>e99d1f1d18470874651f75c515a5840975baad41</sup>
+# docdown <sup>f96c83273a56587be10ea7a03caea4d3d6e6e7f2</sup>
 
 <!-- div class="toc-container" -->
 
@@ -34,7 +34,7 @@
 <!-- div -->
 
 <h3 id="getoptionname-defaultvalue"><code>getOption(name, defaultValue)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/bin-lib/options.js#L21
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/bin-lib/options.js#L26
 
 Gets the value for the given option name. If no value is available the `defaultValue` is returned.
 
@@ -58,7 +58,7 @@ Gets the value for the given option name. If no value is available the `defaultV
 <!-- div -->
 
 <h3 id="optiontovaluename-string"><code>optionToValue(name, string)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/bin-lib/options.js#L39
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/bin-lib/options.js#L44
 
 Extracts the option value from an option string.
 
@@ -82,7 +82,7 @@ Extracts the option value from an option string.
 <!-- div -->
 
 <h3 id="result"><code>result</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/bin-lib/options.js#L41
+https://github.com/satisfactory-dev/docdown/blob/f96c83273a56587be10ea7a03caea4d3d6e6e7f2/bin-lib/options.js#L46
 
 
 
