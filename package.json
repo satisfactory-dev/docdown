@@ -21,6 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/satisfactory-dev/docdown.git"
   },
+  "funding": "https://github.com/satisfactory-dev/docdown?sponsor=1",
   "dependencies": {
     "@es-joy/jsdoccomment": "^0.81.0",
     "jsdoc-type-pratt-parser": "^7.0.0"
