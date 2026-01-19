@@ -21,8 +21,7 @@
     "url": "git+https://github.com/satisfactory-dev/docdown.git"
   },
   "dependencies": {
-    "doctrine": "2.0.0",
-    "lodash": "^4.17.21"
+    "doctrine": "2.0.0"
   },
   "engines": {
     "node": ">=15.14.0"
