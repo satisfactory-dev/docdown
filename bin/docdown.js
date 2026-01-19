@@ -1,15 +1,27 @@
 #!/usr/bin/env node
-'use strict';
+/*!
+ * docdown
+ * Copyright 2011-2016 John-David Dalton
+ * Copyright 2026 SignpostMarv
+ * Available under MIT license
+ */
 
 /** Load Node.js modules */
-var fs = require('fs'),
-    path = require('path');
+import {
+  existsSync,
+  readFileSync,
+  writeFileSync,
+} from 'node:fs';
+import {
+  join,
+} from 'node:path';
 
 /** Load other modules */
-var
-    getOption = require('../bin-lib/options.js')(process.argv),
-    help = require('../bin-lib/help.js'),
-    docdown = require('../index.js');
+import fromContext from '../bin-lib/options.js';
+import help from '../bin-lib/help.js';
+import docdown from '../index.js';
+
+const getOption = fromContext(process.argv);
 
 /** The list of arguments provided */
 var argv = process.argv;
@@ -30,8 +42,8 @@ if (
   process.exit(1);
 }
 
-fileName = path.join(cwd, fileName);
-outputFile = path.join(cwd, outputFile);
+fileName = join(cwd, fileName);
+outputFile = join(cwd, outputFile);
 
 var options = {
   'lang': getOption('lang'),
@@ -46,7 +58,7 @@ var options = {
 
 var output = docdown(options);
 
-const previous = fs.existsSync(outputFile) ? fs.readFileSync(outputFile).toString() : '';
+const previous = existsSync(outputFile) ? readFileSync(outputFile).toString() : '';
 
 if (
   !getOption('--force', false) &&
@@ -69,6 +81,6 @@ if (
   }
 }
 
-fs.writeFileSync(outputFile, output, 'utf8');
+writeFileSync(outputFile, output, 'utf8');
 
 process.exit(0);

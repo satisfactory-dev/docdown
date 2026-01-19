@@ -1,4 +1,9 @@
-'use strict';
+/*!
+ * docdown
+ * Copyright 2011-2016 John-David Dalton
+ * Copyright 2026 SignpostMarv
+ * Available under MIT license
+ */
 
 /*----------------------------------------------------------------------------*/
 
@@ -9,7 +14,7 @@
  *
  * @param {string[]} context
  */
-function fromContext(context) {
+export default function fromContext(context) {
   /**
    * Gets the value for the given option name. If no value is available the
    * `defaultValue` is returned.
@@ -49,5 +54,3 @@ function optionToValue(name, string) {
   }
   return result || undefined;
 }
-
-module.exports = fromContext;

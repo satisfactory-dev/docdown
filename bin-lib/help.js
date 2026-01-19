@@ -3,7 +3,7 @@
  *
  * @return {string} The help text for the docdown cli tool
  */
-function help() {
+export default function help() {
   return [
     'Usage:',
     '  docdown inputFile.js outputFile.md [options]',
@@ -17,5 +17,3 @@ function help() {
     '  --force                     Force the docs to be written to if writing would only leave commit hash-related changes',
   ].join('\n');
 }
-
-module.exports = help;

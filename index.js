@@ -1,14 +1,19 @@
 /*!
  * docdown
  * Copyright 2011-2016 John-David Dalton
+ * Copyright 2026 SignpostMarv
  * Available under MIT license
  */
-'use strict';
 
-var
-    fs = require('fs'),
-    path = require('path'),
-    generator = require('./lib/generator.js');
+import {
+  readFileSync,
+} from 'node:fs';
+
+import {
+  basename,
+} from 'node:path';
+
+import generator from './lib/generator.js';
 
 /**
  * Generates Markdown documentation based on JSDoc comments.
@@ -23,7 +28,7 @@ var
  * @param {string} [options.toc='properties'] The table of contents organization style ('categories' or 'properties').
  * @returns {string} The generated Markdown code.
  */
-function docdown({
+export default function docdown({
   lang = 'js',
   sort = true,
   style = 'default',
@@ -35,14 +40,12 @@ function docdown({
     throw new Error('Path and URL must be specified');
   }
 
-  return generator(fs.readFileSync(options.path, 'utf8'), {
+  return generator(readFileSync(options.path, 'utf8'), {
     ...options,
     lang,
     sort,
     style,
-    title: title == undefined ? path.basename(options.path) + ' API documentation' : title,
+    title: title == undefined ? basename(options.path) + ' API documentation' : title,
     toc,
   });
 }
-
-module.exports = docdown;

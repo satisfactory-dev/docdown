@@ -1,6 +1,7 @@
 {
   "name": "@satisfactory-dev/docdown",
   "description": "A simple JSDoc to Markdown documentation generator.",
+  "type": "module",
   "license": "MIT",
   "main": "index.js",
   "bin": {
