@@ -20,7 +20,7 @@ init:
 
 coverage--bin: docs
 	rm doc/index.md
-	@node bin/docdown index.js doc/index.md --force style=github title="docdown <sup>$(shell git rev-parse HEAD)</sup>" url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
+	@node bin/docdown index.js doc/index.md --force style=github url=https://github.com/satisfactory-dev/docdown/blob/$(shell git rev-parse HEAD)/index.js
 	@git restore doc
 	./bin/docdown.js > /dev/null 2>&1 || true
 

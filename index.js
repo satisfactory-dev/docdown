@@ -5,7 +5,7 @@
  */
 'use strict';
 
-var _ = require('lodash'),
+var
     fs = require('fs'),
     path = require('path'),
     generator = require('./lib/generator.js');
@@ -23,19 +23,26 @@ var _ = require('lodash'),
  * @param {string} [options.toc='properties'] The table of contents organization style ('categories' or 'properties').
  * @returns {string} The generated Markdown code.
  */
-function docdown(options) {
-  options = _.defaults(options, {
-    'lang': 'js',
-    'sort': true,
-    'style': 'default',
-    'title': path.basename(options.path) + ' API documentation',
-    'toc': 'properties'
-  });
-
+function docdown({
+  lang = 'js',
+  sort = true,
+  style = 'default',
+  title,
+  toc = 'properties',
+  ...options
+} = {}) {
   if (!options.path || !options.url) {
     throw new Error('Path and URL must be specified');
   }
-  return generator(fs.readFileSync(options.path, 'utf8'), options);
+
+  return generator(fs.readFileSync(options.path, 'utf8'), {
+    ...options,
+    lang,
+    sort,
+    style,
+    title: title == undefined ? path.basename(options.path) + ' API documentation' : title,
+    toc,
+  });
 }
 
 module.exports = docdown;
