@@ -1,6 +1,6 @@
 .PHONY: coverage
 
-VERSIONS = 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+VERSIONS = 15 16 17 18 19 20 21 22 23 24 25
 
 nvm:
 	@. ${NVM_DIR}/nvm.sh && nvm $(CMD)
@@ -16,7 +16,7 @@ nvm--exec: nvm--install
 
 init:
 	@for version in $(VERSIONS); do make nvm--install VERSION="$$version"; done
-	@make nvm--exec VERSION=12 CMD="npm install"
+	@make nvm--exec VERSION=15 CMD="npm install"
 
 coverage--bin: docs
 	rm doc/index.md
