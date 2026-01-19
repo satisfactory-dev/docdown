@@ -24,7 +24,7 @@
     "doctrine": "^3.0.0"
   },
   "engines": {
-    "node": ">=15.14.0"
+    "node": ">=20.20.0"
   },
   "files": [
     "index.js",
