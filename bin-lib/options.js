@@ -14,7 +14,7 @@
  *
  * @param {string[]} context
  */
-export default function fromContext(context) {
+function fromContext(context) {
   /**
    * Gets the value for the given option name. If no value is available the
    * `defaultValue` is returned.
@@ -54,3 +54,5 @@ function optionToValue(name, string) {
   }
   return result || undefined;
 }
+
+export default fromContext;

@@ -28,7 +28,7 @@ import generator from './lib/generator.js';
  * @param {string} [options.toc='properties'] The table of contents organization style ('categories' or 'properties').
  * @returns {string} The generated Markdown code.
  */
-export default function docdown({
+function docdown({
   lang = 'js',
   sort = true,
   style = 'default',
@@ -49,3 +49,5 @@ export default function docdown({
     toc,
   });
 }
+
+export default docdown;
