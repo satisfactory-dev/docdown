@@ -1,4 +1,4 @@
-# docdown <sup>d527827f884f1c570d878a70f2d4fadcb5f93398</sup>
+# docdown <sup>e99d1f1d18470874651f75c515a5840975baad41</sup>
 
 <!-- div class="toc-container" -->
 
@@ -36,12 +36,13 @@
 <!-- div -->
 
 <h3 id="deparenthesizestr"><code>deparenthesize(str)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/util.js#L106
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L106
 
 Trims leading and trailing parentheses from a string
 
 #### Arguments
-1. `str` *(string)*:
+1. `str` *(string)*: <br>
+<br>
 
 #### Returns
 *(string)*:
@@ -59,7 +60,7 @@ Trims leading and trailing parentheses from a string
 <!-- div -->
 
 <h3 id="regexexecindexregex-string-index"><code>regexExecIndex(regex, string, [index])</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/util.js#L117
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L117
 
 Get the specified index of RegExpExecArray or an empty string
 
@@ -81,17 +82,16 @@ Get the specified index of RegExpExecArray or an empty string
 <!-- div -->
 
 <h3 id="utilprototypecomparenaturalvalue-other"><code>util.prototype.compareNatural(value, other)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/util.js#L27
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L28
 
-The `Array#sort` comparator to produce a
-[natural sort order](https://en.wikipedia.org/wiki/Natural_sort_order).
+The `Array#sort` comparator to produce a [natural sort order](https://en.wikipedia.org/wiki/Natural_sort_order).
 
 #### Arguments
 1. `value` *(string)*: The value to compare.
 2. `other` *(string)*: The other value to compare.
 
 #### Returns
-*(||)*: Returns the sort order indicator for `value`.
+*(-1|0|1)*: Returns the sort order indicator for `value`.
 
 ---
 
@@ -100,12 +100,12 @@ The `Array#sort` comparator to produce a
 <!-- div -->
 
 <h3 id="utilprototypeformatstring"><code>util.prototype.format(string)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/util.js#L55
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L56
 
 Performs common string formatting operations.
 
 #### Arguments
-1. `string` *(|string)*: The string to format.
+1. `string` *(string|undefined)*: The string to format.
 
 #### Returns
 *(string)*: Returns the formatted string.
@@ -117,7 +117,7 @@ Performs common string formatting operations.
 <!-- div -->
 
 <h3 id="utilprototypeparsecomment"><code>util.prototype.parse(comment)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/util.js#L90
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/lib/util.js#L91
 
 Parses the JSDoc `comment` into an object.
 

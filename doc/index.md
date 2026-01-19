@@ -1,4 +1,4 @@
-# docdown <sup>4f11341cb18b89a02af17d3f44e26281f3f8fc80</sup>
+# docdown <sup>e99d1f1d18470874651f75c515a5840975baad41</sup>
 
 <!-- div class="toc-container" -->
 
@@ -20,7 +20,7 @@
 <!-- div -->
 
 <h3 id="docdownoptions"><code>docdown(options)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/4f11341cb18b89a02af17d3f44e26281f3f8fc80/index.js#L26
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/index.js#L26
 
 Generates Markdown documentation based on JSDoc comments.
 
@@ -31,8 +31,7 @@ Generates Markdown documentation based on JSDoc comments.
 4. `[options.lang='js']` *(string)*: The language indicator for code blocks.
 5. `[options.sort=true]` *(boolean)*: Specify whether entries are sorted.
 6. `[options.style='default']` *(string): The hash style for links &#42;('default' or 'github')*&#42;.
-7. `[options.title='<%= basename(options.path) %> API documentation']` *(string)*: The documentation title.
-8. `[options.toc='properties']` *(string): The table of contents organization style &#42;('categories' or 'properties')*&#42;.
+7. `[options.toc='properties']` *(string): The table of contents organization style &#42;('categories' or 'properties')*&#42;.
 
 #### Returns
 *(string)*: The generated Markdown code.

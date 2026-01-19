@@ -1,4 +1,4 @@
-# docdown <sup>8e1806369a0996e66d218945d0f98dd4d98a0999</sup>
+# docdown <sup>e99d1f1d18470874651f75c515a5840975baad41</sup>
 
 <!-- div class="toc-container" -->
 
@@ -34,17 +34,16 @@
 <!-- div -->
 
 <h3 id="getoptionname-defaultvalue"><code>getOption(name, defaultValue)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/bin-lib/options.js#L21
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/bin-lib/options.js#L21
 
-Gets the value for the given option name. If no value is available the
-`defaultValue` is returned.
+Gets the value for the given option name. If no value is available the `defaultValue` is returned.
 
 #### Arguments
 1. `name` *(OptionName)*: The name of the option.
-2. `defaultValue` *(|boolean|string)*: The default option value.
+2. `defaultValue` *(boolean|string|undefined)*: The default option value.
 
 #### Returns
-*(|boolean|string)*: Returns the option value.
+*(boolean|string|undefined)*: Returns the option value.
 
 ---
 
@@ -59,7 +58,7 @@ Gets the value for the given option name. If no value is available the
 <!-- div -->
 
 <h3 id="optiontovaluename-string"><code>optionToValue(name, string)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/bin-lib/options.js#L39
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/bin-lib/options.js#L39
 
 Extracts the option value from an option string.
 
@@ -68,7 +67,7 @@ Extracts the option value from an option string.
 2. `string` *(string)*: The options string.
 
 #### Returns
-*(|boolean|string)*: Returns the option value, else `undefined`.
+*(boolean|string|undefined)*: Returns the option value, else `undefined`.
 
 ---
 
@@ -83,7 +82,7 @@ Extracts the option value from an option string.
 <!-- div -->
 
 <h3 id="result"><code>result</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/8e1806369a0996e66d218945d0f98dd4d98a0999/bin-lib/options.js#L41
+https://github.com/satisfactory-dev/docdown/blob/e99d1f1d18470874651f75c515a5840975baad41/bin-lib/options.js#L41
 
 
 
