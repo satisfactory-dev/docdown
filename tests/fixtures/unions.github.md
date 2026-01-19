@@ -6,9 +6,18 @@
 
 ## `baz.prototype`
 * <a href="#bazprototypebagoption">`baz.prototype.bag`</a>
+* <a href="#bazprototypebagoption">`baz.prototype.bag`</a>
+* <a href="#bazprototypebaggeoption">`baz.prototype.bagge`</a>
 * <a href="#bazprototypebaroption">`baz.prototype.bar`</a>
 * <a href="#bazprototypebatoption">`baz.prototype.bat`</a>
 * <a href="#bazprototypefoooption">`baz.prototype.foo`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
+## `variadic`
+* <a href="#variadicfoo-bar-baz">`variadic`</a>
 
 <!-- /div -->
 
@@ -28,7 +37,7 @@
 
 
 #### Arguments
-1. `option` *(string&#91;&#93;)|string)*: the option
+1. `option` *(string|string&#91;&#93;)*: the option
 
 #### Returns
 *(string|string&#91;&#93;)*: the result
@@ -39,13 +48,48 @@
 
 <!-- div -->
 
-<h3 id="bazprototypebaroption"><code>baz.prototype.bar(option)</code></h3>
-./#L47 [&#x24C9;][1]
+<h3 id="bazprototypebagoption"><code>baz.prototype.bag(option)</code></h3>
+./#L44 [&#x24C9;][1]
 
 
 
 #### Arguments
-1. `option` *(||)*:
+1. `option` *(JsdocTypeUnion&#91;&#93;|string)*: the option
+
+#### Returns
+*(string|string&#91;&#93;)*: the result
+
+---
+
+<!-- /div -->
+
+<!-- div -->
+
+<h3 id="bazprototypebaggeoption"><code>baz.prototype.bagge(option)</code></h3>
+./#L54 [&#x24C9;][1]
+
+
+
+#### Arguments
+1. `option` *(&#91;string, string, string&#93;|string)*: the option
+
+#### Returns
+*(&#91;string, string, string&#93;|string)*: the result
+
+---
+
+<!-- /div -->
+
+<!-- div -->
+
+<h3 id="bazprototypebaroption"><code>baz.prototype.bar(option)</code></h3>
+./#L65 [&#x24C9;][1]
+
+
+
+#### Arguments
+1. `option` *('bar'|'baz'|'foo')*: <br>
+<br>
 
 #### Returns
 *(Reverse|string)*: reverse string
@@ -62,7 +106,7 @@
 
 
 #### Arguments
-1. `option` *(string&#91;&#93;)|string)*: the option
+1. `option` *(string|string&#91;&#93;)*: the option
 
 #### Returns
 *(string)*: the result
@@ -79,10 +123,36 @@
 
 
 #### Arguments
-1. `option` *(string&#91;&#93;)|string)*: the option
+1. `option` *(string|string&#91;&#93;)*: the option
 
 #### Returns
-*(string&#91;&#93;)|string)*: the result
+*(string|string&#91;&#93;)*: the result
+
+---
+
+<!-- /div -->
+
+<!-- /div -->
+
+<!-- div -->
+
+## `variadic`
+
+<!-- div -->
+
+<h3 id="variadicfoo-bar-baz"><code>variadic(foo, bar, baz)</code></h3>
+./#L76 [&#x24C9;][1]
+
+
+
+#### Arguments
+1. `foo` *(1|2)*:
+2. `bar` *(3|4)*:
+3. `baz` *(...number&#91;&#93;)*: <br>
+<br>
+
+#### Returns
+*(number)*:
 
 ---
 

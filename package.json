@@ -21,7 +21,8 @@
     "url": "git+https://github.com/satisfactory-dev/docdown.git"
   },
   "dependencies": {
-    "doctrine": "^3.0.0"
+    "@es-joy/jsdoccomment": "^0.81.0",
+    "jsdoc-type-pratt-parser": "^7.0.0"
   },
   "engines": {
     "node": ">=20.20.0"

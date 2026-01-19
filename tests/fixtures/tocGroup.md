@@ -40,6 +40,13 @@
 
 <!-- div -->
 
+## `manual`
+* <a href="#manual">`manual`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
 ## `manual_category`
 * <a href="#manual_category">`manual_category`</a>
 
@@ -140,6 +147,23 @@
 <!-- div -->
 
 ## `foobarbaz`
+
+<!-- /div -->
+
+<!-- div -->
+
+## `manual`
+
+<!-- div -->
+
+<h3 id="manual"><a href="#manual">#</a>&nbsp;<code>manual()</code></h3>
+[&#x24C8;](./#L67 "View in source") [&#x24C9;][1]
+
+
+
+---
+
+<!-- /div -->
 
 <!-- /div -->
 

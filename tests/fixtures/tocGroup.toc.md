@@ -4,6 +4,13 @@
 
 <!-- div -->
 
+## `Manual`
+* <a href="#manual">`manual`</a>
+
+<!-- /div -->
+
+<!-- div -->
+
 ## `Manual Category`
 * <a href="#manual_category">`manual_category`</a>
 
@@ -30,6 +37,23 @@
 <!-- /div -->
 
 <!-- div class="doc-container" -->
+
+<!-- div -->
+
+## `“Manual” Methods`
+
+<!-- div -->
+
+<h3 id="manual"><a href="#manual">#</a>&nbsp;<code>manual()</code></h3>
+[&#x24C8;](./#L67 "View in source") [&#x24C9;][1]
+
+
+
+---
+
+<!-- /div -->
+
+<!-- /div -->
 
 <!-- div -->
 
@@ -126,4 +150,4 @@
 
 <!-- /div -->
 
- [1]: #manual category "Jump back to the TOC."
+ [1]: #manual "Jump back to the TOC."

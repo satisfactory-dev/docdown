@@ -11,20 +11,6 @@
 
 <!-- div -->
 
-## `bat`
-* <a href="#foo" class="alias">`bat` -> `foo`</a>
-
-<!-- /div -->
-
-<!-- div -->
-
-## `baz`
-* <a href="#foo" class="alias">`baz` -> `foo`</a>
-
-<!-- /div -->
-
-<!-- div -->
-
 ## `foo`
 * <a href="#foo">`foo`</a>
 
@@ -42,29 +28,17 @@
 
 <!-- div -->
 
-## `bat`
-
-<!-- /div -->
-
-<!-- div -->
-
-## `baz`
-
-<!-- /div -->
-
-<!-- div -->
-
 ## `foo`
 
 <!-- div -->
 
 <h3 id="foo"><a href="#foo">#</a>&nbsp;<code>foo()</code></h3>
-[&#x24C8;](./#L4 "View in source") [&#x24C9;][1]
+[&#x24C8;](./#L6 "View in source") [&#x24C9;][1]
 
 
 
 #### Aliases
-*bar, bat, baz*
+*bar*
 
 ---
 

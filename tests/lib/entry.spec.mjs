@@ -42,12 +42,12 @@ describe('Entry', () => {
 				[['bat'], ['bat'], ['bat']],
 			],
 			'two aliases': [
-				[['bar', 'bat'], ['bar'], ['bar', 'bat']],
-				[['bat', 'bar'], ['bat'], ['bar', 'bat']],
+				[['bar', 'bat'], ['bar'], ['bar']],
+				[['bat', 'bar'], ['bat'], ['bat']],
 			],
 			'three aliases': [
-				[['bar', 'bat', 'baz'], ['bar'], ['bar', 'bat', 'baz']],
-				[['bat', 'bar', 'baz'], ['bat'], ['bar', 'bat', 'baz']],
+				[['bar', 'bat', 'baz'], ['bar'], ['bar']],
+				[['bat', 'bar', 'baz'], ['bat'], ['bat']],
 			],
 		};
 
@@ -268,7 +268,7 @@ describe('Entry', () => {
 			);
 
 			assert.equal(entryMultipleTags.getHash('default'), 'Foo-prototype-foo')
-			assert.equal(entrySpacedValue.getHash('default'), 'Foo Bar-prototype-foo')
+			assert.equal(entrySpacedValue.getHash('default'), 'Foo-prototype-foo')
 			assert.equal(entryCommaValue.getHash('default'), 'Bar-prototype-foo')
 		})
 		it('default style decorated as static', () => {
@@ -360,6 +360,9 @@ describe('Entry', () => {
 			],
 			UnionType: [
 				['foo|bar|baz', '(bar|baz|foo)'],
+			],
+			UnionType: [
+				[`'foo'|'bar'|'baz'`, `('bar'|'baz'|'foo')`],
 			],
 		};
 

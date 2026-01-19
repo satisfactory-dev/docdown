@@ -57,6 +57,11 @@ class Es6 {
 }
 
 /**
- * @category Manual Category
+ * @category "Manual Category"
  */
 function manual_category() {}
+
+/**
+ * @category Manual Category
+ */
+function manual() {}
