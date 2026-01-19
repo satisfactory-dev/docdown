@@ -1,4 +1,4 @@
-# docdown <sup>3ca608041d16155e3e12ef59c2c839e3191f271e</sup>
+# docdown <sup>d527827f884f1c570d878a70f2d4fadcb5f93398</sup>
 
 <!-- div class="toc-container" -->
 
@@ -34,7 +34,7 @@
 <!-- div -->
 
 <h3 id="api"><code>api</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/3ca608041d16155e3e12ef59c2c839e3191f271e/lib/generator.js#L102
+https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/generator.js#L106
 
 
 
@@ -51,7 +51,7 @@ https://github.com/satisfactory-dev/docdown/blob/3ca608041d16155e3e12ef59c2c839e
 <!-- div -->
 
 <h3 id="generatedocthe-the"><code>generateDoc(The, The)</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/3ca608041d16155e3e12ef59c2c839e3191f271e/lib/generator.js#L100
+https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/generator.js#L104
 
 Generates the documentation from JS source.
 
@@ -75,7 +75,7 @@ Generates the documentation from JS source.
 <!-- div -->
 
 <h3 id="organized"><code>organized</code></h3>
-https://github.com/satisfactory-dev/docdown/blob/3ca608041d16155e3e12ef59c2c839e3191f271e/lib/generator.js#L107
+https://github.com/satisfactory-dev/docdown/blob/d527827f884f1c570d878a70f2d4fadcb5f93398/lib/generator.js#L111
 
 
 
